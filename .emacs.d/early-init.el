@@ -38,6 +38,5 @@
                             ;; color as the theme gets activated
                             (background-color . "#000000")
                             (foreground-color . "#ffffff")
-			    (font . "Jetbrains Mono 10")
                             (ns-appearance . dark)
                             (ns-transparent-titlebar . t)))

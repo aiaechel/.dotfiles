@@ -251,7 +251,8 @@ If the new path's directories does not exist, create them."
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(display-time-mode t)
- '(package-selected-packages '(dashboard which-key))
+ '(inhibit-startup-screen t)
+ '(package-selected-packages nil)
  '(tab-bar-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
