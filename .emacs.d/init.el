@@ -252,6 +252,7 @@ If the new path's directories does not exist, create them."
  '(column-number-mode t)
  '(display-time-mode t)
  '(inhibit-startup-screen t)
+ '(make-backup-files nil)
  '(package-selected-packages nil)
  '(tab-bar-mode t)
  '(tool-bar-mode nil))
