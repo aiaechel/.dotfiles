@@ -253,7 +253,9 @@ If the new path's directories does not exist, create them."
  '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(make-backup-files nil)
+ '(menu-bar-mode nil)
  '(package-selected-packages nil)
+ '(scroll-bar-mode nil)
  '(tab-bar-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
