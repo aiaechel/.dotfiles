@@ -77,6 +77,8 @@ Since this is a dotfiles repository, there are no build commands or tests. Confi
 2. Running `./deploy.sh` to update symlinks (if needed)
 3. Reloading the shell or restarting applications
 
+Any files added that isn't a dotfile that should be added to my system should have its filename added to the .stow-local-ignore file
+
 ## Fish Shell Functions
 
 Custom functions are defined in `.config/fish/functions/`:
