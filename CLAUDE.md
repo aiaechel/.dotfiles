@@ -30,9 +30,17 @@ This is a personal dotfiles repository managed with GNU Stow. The repository con
 This repository uses **GNU Stow** for managing dotfiles. To deploy configurations:
 
 ```bash
-# From the dotfiles directory
-stow .  # Deploy all configurations to home directory
+# Automated deployment (recommended)
+./deploy.sh
+
+# Manual deployment
+stow . --no-folding
 ```
+
+The `deploy.sh` script:
+1. Checks if GNU Stow is installed
+2. Creates necessary directories (`~/.emacs.d`, `~/.config/fish`) to prevent files from being created in .dotfiles
+3. Runs `stow . --no-folding` to deploy configurations
 
 The `.stow-local-ignore` file excludes `.git`, `README.md`, and `.DS_Store` from stow operations.
 
@@ -63,10 +71,10 @@ The `.stow-local-ignore` file excludes `.git`, `README.md`, and `.DS_Store` from
 
 ## Common Development Tasks
 
-Since this is a dotfiles repository, there are no build commands, tests, or deployment scripts. Configuration changes are applied by:
+Since this is a dotfiles repository, there are no build commands or tests. Configuration changes are applied by:
 
 1. Editing the relevant configuration files
-2. Running `stow .` to update symlinks (if needed)
+2. Running `./deploy.sh` to update symlinks (if needed)
 3. Reloading the shell or restarting applications
 
 ## Fish Shell Functions
