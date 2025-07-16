@@ -26,8 +26,8 @@ echo "✓ Created ~/.emacs.d directory"
 mkdir -p ~/.config/fish
 echo "✓ Created ~/.config/fish directory"
 
-# Deploy dotfiles using stow with --no-folding
-stow . --no-folding
+# Deploy dotfiles using stow
+stow .
 echo "✓ Dotfiles deployed successfully!"
 
 echo "Deployment complete. You may need to restart your shell or applications to see changes."

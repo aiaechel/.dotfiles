@@ -34,13 +34,13 @@ This repository uses **GNU Stow** for managing dotfiles. To deploy configuration
 ./deploy.sh
 
 # Manual deployment
-stow . --no-folding
+stow .
 ```
 
 The `deploy.sh` script:
 1. Checks if GNU Stow is installed
 2. Creates necessary directories (`~/.emacs.d`, `~/.config/fish`) to prevent files from being created in .dotfiles
-3. Runs `stow . --no-folding` to deploy configurations
+3. Runs `stow .` to deploy configurations
 
 The `.stow-local-ignore` file excludes `.git`, `README.md`, and `.DS_Store` from stow operations.
 

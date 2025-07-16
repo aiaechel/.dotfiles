@@ -1,3 +1,5 @@
 \.DS_Stor
 .git
 README.md
+CLAUDE.md
+deploy.sh
