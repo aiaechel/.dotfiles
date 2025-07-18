@@ -1,0 +1,72 @@
+configuration {
+    /*---------- General ----------*/
+    modi: "drun,run,window";
+    case-sensitive: false;
+    cycle: true;
+    filter: "";
+    disable-history: false;
+    sort: false;
+    sorting-method: "normal";
+    matching: "normal";
+    tokenize: true;
+    
+    /*---------- Appearance ----------*/
+    font: "JetBrains Mono 12";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    
+    /*---------- Window ----------*/
+    width: 50;
+    lines: 15;
+    columns: 1;
+    location: 0;
+    anchor: 1;
+    fullscreen: false;
+    fixed-num-lines: true;
+    
+    /*---------- Border ----------*/
+    bw: 2;
+    
+    /*---------- Spacing ----------*/
+    padding: 8;
+    yoffset: 0;
+    xoffset: 0;
+    line-margin: 2;
+    line-padding: 1;
+    separator-style: "dash";
+    hide-scrollbar: false;
+    scrollbar-width: 8;
+    
+    /*---------- Display ----------*/
+    display-drun: "Applications";
+    display-window: "Windows";
+    drun-display-format: "{icon} {name}";
+    drun-match-fields: "name,generic,exec,categories,keywords";
+    drun-categories: "";
+    drun-show-actions: false;
+    drun-url-launcher: "xdg-open";
+    drun-use-desktop-cache: false;
+    drun-reload-desktop-cache: false;
+    
+    window-format: "{w}    {c}   {t}";
+    window-command: "wmctrl -i -R {window}";
+    window-match-fields: "title,class,role,name,desktop";
+    window-thumbnail: false;
+    
+    /*---------- Terminal ----------*/
+    terminal: "alacritty";
+    
+    /*---------- SSH ----------*/
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+    parse-hosts: true;
+    parse-known-hosts: true;
+    
+    /*---------- Run ----------*/
+    run-command: "{cmd}";
+    run-list-command: "";
+    run-shell-command: "{terminal} -e {cmd}";
+    
+    /*---------- Fallback ----------*/
+    application-fallback-icon: "application-x-addon";
+}
