@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a personal dotfiles repository managed with GNU Stow. The repository contains configuration files for:
 
+- **Sway** (`~/.config/sway/`) - Tiling Wayland compositor
+- **Rofi** (`~/.config/rofi/`) - Window switcher and application launcher
 - **Fish Shell** (`~/.config/fish/`) - Custom shell configuration with aliases, functions, and keybindings
 - **Emacs** (`~/.emacs.d/`) - Based on Emacs Bedrock configuration framework
 - **Alacritty** (`~/.config/alacritty/`) - Terminal emulator configuration
@@ -17,7 +19,9 @@ This is a personal dotfiles repository managed with GNU Stow. The repository con
 .dotfiles/
 ├── .config/
 │   ├── alacritty/        # Terminal emulator config
-│   └── fish/             # Fish shell config and functions
+│   ├── fish/             # Fish shell config and functions
+│   ├── rofi/             # Rofi configuration
+│   └── sway/             # Sway configuration
 ├── .emacs.d/             # Emacs configuration
 │   ├── init.el           # Main Emacs config
 │   └── extras/           # Optional Emacs modules

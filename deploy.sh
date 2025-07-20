@@ -26,6 +26,12 @@ echo "✓ Created ~/.emacs.d directory"
 mkdir -p ~/.config/fish
 echo "✓ Created ~/.config/fish directory"
 
+mkdir -p ~/.config/rofi
+echo "✓ Created ~/.config/rofi directory"
+
+mkdir -p ~/.config/sway
+echo "✓ Created ~/.config/sway directory"
+
 # Deploy dotfiles using stow
 stow .
 echo "✓ Dotfiles deployed successfully!"
