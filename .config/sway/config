@@ -15,6 +15,12 @@ set $term alacritty
 # Your preferred application launcher
 set $menu rofi -show drun
 
+# Remove titlebars from all windows
+default_border pixel 0
+
+# Add 8px padding around windows
+gaps inner 8
+
 ### Output configuration
 #
 # Multi-monitor setup based on xrandr output
