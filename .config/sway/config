@@ -156,7 +156,10 @@ workspace 7 output HDMI-A-1
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
+
+    # Launch the unified menu
+    bindsym $mod+Shift+space exec ~/.config/rofi/scripts/unified-menu.sh
 
     # Window switching with rofi
     bindsym $mod+Tab exec rofi -show window
