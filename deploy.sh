@@ -12,8 +12,8 @@ if ! command -v stow &> /dev/null; then
     echo "Error: GNU Stow is not installed. Please install it first."
     echo ""
     echo "Install GNU Stow and recommended applications:"
-    echo "On Arch Linux: sudo pacman -S stow emacs fish eza bat fastfetch alacritty"
-    echo "On Ubuntu/Debian: sudo apt install stow emacs fish bat alacritty && cargo install eza fastfetch"
+    echo "On Arch Linux: sudo pacman -S stow emacs fish eza bat fastfetch alacritty dex"
+    echo "On Ubuntu/Debian: sudo apt install stow emacs fish bat alacritty dex && cargo install eza fastfetch"
     exit 1
 fi
 
@@ -46,6 +46,7 @@ echo "• eza (modern ls replacement) - Used in fish aliases"
 echo "• bat (modern cat replacement) - Used for man pages and aliases"
 echo "• fastfetch - Used as fish greeting"
 echo "• Alacritty - Terminal emulator (config included)"
+echo "• dex - Required for autostarting applications in Sway"
 echo ""
-echo "On Arch Linux: sudo pacman -S emacs fish eza bat fastfetch alacritty"
-echo "On Ubuntu/Debian: sudo apt install emacs fish bat alacritty && cargo install eza fastfetch"
+echo "On Arch Linux: sudo pacman -S emacs fish eza bat fastfetch alacritty dex"
+echo "On Ubuntu/Debian: sudo apt install emacs fish bat alacritty dex && cargo install eza fastfetch"

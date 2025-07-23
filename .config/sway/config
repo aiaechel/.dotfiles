@@ -41,6 +41,9 @@ exec swayidle -w \
          timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
          before-sleep 'swaylock -f -c 000000'
 
+# Run autostart applications
+exec dex -a -e sway
+
 ### Input configuration
 #
 # Example configuration:

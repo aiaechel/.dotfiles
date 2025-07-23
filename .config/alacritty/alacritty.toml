@@ -159,6 +159,16 @@ key = "Key0"
 mods = "Control"
 action = "ResetFontSize"
 
+[[keyboard.bindings]]
+key = "Q"
+mods = "Control"
+action = "Quit"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Control"
+action = "Quit"
+
 [general]
 live_config_reload = true
 working_directory = "None"

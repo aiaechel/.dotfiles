@@ -8,6 +8,10 @@ end
 set -x MANROFFOPT "-c"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
+# Set editor variables
+set -x EDITOR "emacs -nw"
+set -x VISUAL "emacs"
+
 ## Functions
 # Functions needed for !! and !$ https://github.com/oh-my-fish/plugin-bang-bang
 function __history_previous_command
