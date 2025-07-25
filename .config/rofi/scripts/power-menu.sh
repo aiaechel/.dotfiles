@@ -19,7 +19,7 @@ case "$chosen" in
         reboot
         ;;
     "Lock")
-        swaylock -f
+        swaylock -f -c 000000
         ;;
     *)
         ;;

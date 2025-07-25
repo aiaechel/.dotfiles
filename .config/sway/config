@@ -36,10 +36,7 @@ output * bg #1e3a5f solid_color
 
 ### Idle configuration
 #
-exec swayidle -w \
-         timeout 900 'swaylock -f -c 000000' \
-         timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f -c 000000'
+# Idle power off disabled
 
 # Run autostart applications
 exec dex -a -e sway
@@ -81,7 +78,7 @@ exec dex -a -e sway
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    bindsym $mod+l exec swaylock -f
+    bindsym $mod+l exec swaylock -f -c 000000
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+l exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
